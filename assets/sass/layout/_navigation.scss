@@ -1,0 +1,25 @@
+.navBar{
+    @include font(extrabold, 24);
+    width: 100%;
+    background-color: $brand;
+    color: $neutal-2;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 4px solid $secondary-4;
+    & > .container{
+        position: relative;
+        padding: 0;
+    }
+    &_title{
+        text-transform: uppercase;
+    }
+    &_icon{
+        position: absolute;
+        top: 1px;
+        right: 0;
+        font-size: 2.8rem;
+        color: $secondary-2;
+    }
+    
+}
+

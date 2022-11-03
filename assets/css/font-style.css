@@ -1,0 +1,37 @@
+/* Inter */
+/* Inter-Light */
+@font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-Light.ttf) format("truetype");
+    font-weight: 300;
+  }
+  /* Inter-Regular */
+  @font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-Regular.ttf) format("truetype");
+    font-weight: 400;
+  }
+  /* Inter-Medium */
+  @font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-Medium.ttf) format("truetype");
+    font-weight: 500;
+  }
+  /* Inter-SimiBold */
+  @font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+  }
+  /* Inter-Bold*/
+  @font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-Bold.ttf) format("truetype");
+    font-weight: 700;
+  }
+  /* Inter-ExtraBold*/
+  @font-face {
+    font-family: "Inter";
+    src: url(../webfonts/Inter-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+  }
