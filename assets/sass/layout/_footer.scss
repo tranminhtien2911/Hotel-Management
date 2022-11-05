@@ -3,7 +3,10 @@
     padding: 14px 0;
     background-color: $secondary-4;
     text-align: center;
-
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    
     span {
         @include font(regular, 16);
         color: $neutal-2;

@@ -32,7 +32,7 @@
     <div class="navBar">
         <div class="container navBar_body">
             <span class="navBar_title">tracking and support guest system</span>
-            <i class="fi fi-rr-info navBar_icon"></i>
+            <!-- <i class="fi fi-rr-info navBar_icon"></i> -->
         </div>
     </div>
     <!-- |-End Navbar-| -->
@@ -40,26 +40,27 @@
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 col_left">
+                <div class="col-xl-7 col-lg-6 col-md-12 col_left">
                     <div class="camera_notification">
                         <i class="fi-rr-video-camera"></i>
                         DuyTan Hotel One-Lobby
                     </div>
                     <div class="camera_display">
-                        <img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                            alt="">
-                        <!-- <video controls muted>
+                        <!-- <img src="https://images.unsplash.com/photo-1621293954908-907159247fc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt=""> -->
+                        <video controls muted>
                             <source  src="/assets/img/RESTAURANT & BAR DESIGN- Follow the Follower.mp4" type="video/mp4">
-                        </video> -->
+                        </video>
                     </div>
 
                 </div>
-                <div class="col-md-5 col_right">
+                <div class="col-xl-5 col-lg-6 col-md-12 col_right">
                     <div class="table_title">
                         <i class="fi fi-rr-notebook"></i>
+                        Information guest list
                     </div>
                     <div class="table_content">
-                        <div class="table_head table_Public">
+                        <div class="table_head table_Public sticky-top">
                             <div class="table_head-feil table_feilPublic"><img src="./assets/img/Group 2.svg" alt="">
                             </div>
                             <div class="table_head-feil table_feilPublic">guest name</div>
@@ -70,10 +71,10 @@
                         <div class="table_body">
                             <div class="table_body-row">
                                 <div class="table_Public">
-                                    <div class="table_body-feil table_feilPublic">01</div>
-                                    <div class="table_body-feil table_feilPublic">Theo Johnson</div>
-                                    <div class="table_body-feil table_feilPublic">101</div>
-                                    <div class="table_body-feil table_feilPublic"><span>Black list</span></div>
+                                    <div class="table_body-feil">01</div>
+                                    <div class="table_body-feil">Theo Johnson</div>
+                                    <div class="table_body-feil">101</div>
+                                    <div class="table_body-feil">Black list</div>
                                     <i class="fi fi-rr-angle-small-right"></i>
                                     <!-- Notification -->
                                     <div class="table_notification">3</div>
@@ -82,128 +83,146 @@
                                 <div class="table_body-detail">
                                     <!-- Tabs -->
                                     <div class="detail_tab">
-                                        <input class="radio" id="one" name="group" type="radio">
-                                        <input class="radio" id="two" name="group" type="radio">
-                                        <input class="radio" id="three" name="group" type="radio">
-                                        <div class="detail_tab-wrapper tabs">
-                                            <label class="detail_tab-item" id="one-tab" for="one"><span>Service</span></label>
-                                            <label class="detail_tab-item" id="two-tab" for="two"><span>Tour</span></label>
-                                            <label class="detail_tab-item" id="three-tab" for="three"><span>Black list</span></label>
-                                        </div>
-                                        <div class="panels">
-                                            <div class="panel detail_service" id="one-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">NO.</div>
-                                                    <div class="detail_header-item">Type of service</div>
-                                                    <div class="detail_header-item">Date Service</div>
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">01</div>
-                                                        <div class="detail_content-item">Go to Airport</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">02</div>
-                                                        <div class="detail_content-item">Lunch</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">03</div>
-                                                        <div class="detail_content-item">Shoeshine</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">04</div>
-                                                        <div class="detail_content-item">Wake-Up Call</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">05</div>
-                                                        <div class="detail_content-item">Room</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="panel detail_tour" id="two-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">NO.</div>
-                                                    <div class="detail_header-item">Place Name</div>
-                                                    <div class="detail_header-item">Date Tour</div>
-                                                </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">01</div>
-                                                        <div class="detail_content-item">BaNa Hill</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">02</div>
-                                                        <div class="detail_content-item">NinhKieu Quay</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">03</div>
-                                                        <div class="detail_content-item">HoiAn</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">04</div>
-                                                        <div class="detail_content-item">CaiRang Floating Market</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">05</div>
-                                                        <div class="detail_content-item">Phong Nha Ke Bang</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel detail_blackList" id="three-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">Type</div>
-                                                    <div class="detail_header-item">Facility</div>
-                                                    <div class="detail_header-item">Level</div>
-                                                </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Noisy</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Low</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Violance</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Critial</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Steal</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Low</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Littered</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">High</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Noisy</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Medium</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
                             <!-- Item - N -->
                             <div class="table_body-row">
                                 <div class="table_Public">
-                                    <div class="table_body-feil table_feilPublic">01</div>
-                                    <div class="table_body-feil table_feilPublic">Theo Johnson</div>
-                                    <div class="table_body-feil table_feilPublic">101</div>
-                                    <div class="table_body-feil table_feilPublic"><span>Tour</span></div>
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
                                     <i class="fi fi-rr-angle-small-right"></i>
                                     <!-- Notification -->
                                     <div class="table_notification">3</div>
@@ -212,123 +231,1323 @@
                                 <div class="table_body-detail">
                                     <!-- Tabs -->
                                     <div class="detail_tab">
-                                        <input class="radio" id="one" name="group" type="radio">
-                                        <input class="radio" id="two" name="group" type="radio">
-                                        <input class="radio" id="three" name="group" type="radio">
-                                        <div class="detail_tab-wrapper tabs">
-                                            <label class="detail_tab-item" id="one-tab" for="one"><span>Service</span></label>
-                                            <label class="detail_tab-item" id="two-tab" for="two"><span>Tour</span></label>
-                                            <label class="detail_tab-item" id="three-tab" for="three"><span>Black list</span></label>
-                                        </div>
-                                        <div class="panels">
-                                            <div class="panel detail_service" id="one-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">NO.</div>
-                                                    <div class="detail_header-item">Type of service</div>
-                                                    <div class="detail_header-item">Date Service</div>
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">01</div>
-                                                        <div class="detail_content-item">Go to Airport</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">02</div>
-                                                        <div class="detail_content-item">Lunch</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">03</div>
-                                                        <div class="detail_content-item">Shoeshine</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">04</div>
-                                                        <div class="detail_content-item">Wake-Up Call</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">05</div>
-                                                        <div class="detail_content-item">Room</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="panel detail_tour" id="two-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">NO.</div>
-                                                    <div class="detail_header-item">Place Name</div>
-                                                    <div class="detail_header-item">Date Tour</div>
-                                                </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">01</div>
-                                                        <div class="detail_content-item">BaNa Hill</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">02</div>
-                                                        <div class="detail_content-item">NinhKieu Quay</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">03</div>
-                                                        <div class="detail_content-item">HoiAn</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">04</div>
-                                                        <div class="detail_content-item">CaiRang Floating Market</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">05</div>
-                                                        <div class="detail_content-item">Phong Nha Ke Bang</div>
-                                                        <div class="detail_content-item">08:00 27-7-2021</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel detail_blackList" id="three-panel">
-                                                <div class="detail_header">
-                                                    <div class="detail_header-item">Type</div>
-                                                    <div class="detail_header-item">Facility</div>
-                                                    <div class="detail_header-item">Level</div>
-                                                </div>
-                                                <div class="detail_wrapper">
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Noisy</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Low</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Violance</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Critial</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Steal</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Low</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Littered</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">High</div>
-                                                    </div>
-                                                    <div class="detail_content">
-                                                        <div class="detail_content-item">Noisy</div>
-                                                        <div class="detail_content-item">DuyTan Hotel 1</div>
-                                                        <div class="detail_content-item">Medium</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </nav>
                                     </div>
                                 </div>
                             </div>
                             <!-- Item - N -->
-                            
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item - N -->
+                            <div class="table_body-row">
+                                <div class="table_Public">
+                                    <div class="table_body-feil ">01</div>
+                                    <div class="table_body-feil ">Theo Johnson</div>
+                                    <div class="table_body-feil ">101</div>
+                                    <div class="table_body-feil "><span>Tour</span></div>
+                                    <i class="fi fi-rr-angle-small-right"></i>
+                                    <!-- Notification -->
+                                    <div class="table_notification">3</div>
+                                </div>
+                                <!-- Detail -->
+                                <div class="table_body-detail">
+                                    <!-- Tabs -->
+                                    <div class="detail_tab">
+                                        <nav>
+                                            <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                                <button class="nav-link border-0 detail_tab-item active"
+                                                    id="nav-service-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-service" type="button" role="tab"
+                                                    aria-controls="nav-service" aria-selected="true">Service</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-tour-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tour" type="button"
+                                                    role="tab" aria-controls="nav-tour"
+                                                    aria-selected="false">Tour</button>
+                                                <button class="nav-link border-0 detail_tab-item" id="nav-blacklist-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-blacklist" type="button"
+                                                    role="tab" aria-controls="nav-blacklist" aria-selected="false">Black
+                                                    list</button>
+                                            </div>
+                                            <div class="tab-content" id="nav-tabContent">
+                                                <div class="tab-pane show active" id="nav-service" role="tabpanel"
+                                                    aria-labelledby="nav-service-tab">
+                                                    <div class="detail_service">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Type of service</div>
+                                                            <div class="detail_header-item">Date Service</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">Go to Airport</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">Lunch</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">Shoeshine</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">Wake-Up Call</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Room</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-tour" role="tabpanel"
+                                                    aria-labelledby="nav-tour-tab">
+                                                    <div class="detail_tour">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">NO.</div>
+                                                            <div class="detail_header-item">Place Name</div>
+                                                            <div class="detail_header-item">Date Tour</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">01</div>
+                                                                <div class="detail_content-item">BaNa Hill</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">02</div>
+                                                                <div class="detail_content-item">NinhKieu Quay</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">03</div>
+                                                                <div class="detail_content-item">HoiAn</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">04</div>
+                                                                <div class="detail_content-item">CaiRang Floating Market
+                                                                </div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">05</div>
+                                                                <div class="detail_content-item">Phong Nha Ke Bang</div>
+                                                                <div class="detail_content-item">08:00 27-7-2021</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane " id="nav-blacklist" role="tabpanel"
+                                                    aria-labelledby="nav-blacklist-tab">
+                                                    <div class="detail_blacklist">
+                                                        <div class="detail_header">
+                                                            <div class="detail_header-item">Type</div>
+                                                            <div class="detail_header-item">Facility</div>
+                                                            <div class="detail_header-item">Level</div>
+                                                        </div>
+                                                        <div class="detail_wrapper">
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Violance</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Critial</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Steal</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Low</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Littered</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">High</div>
+                                                            </div>
+                                                            <div class="detail_content">
+                                                                <div class="detail_content-item">Noisy</div>
+                                                                <div class="detail_content-item">DuyTan Hotel 1</div>
+                                                                <div class="detail_content-item">Medium</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -337,7 +1556,7 @@
     </div>
     <!-- |-End Body-| -->
     <!-- |-Copy Right-| -->
-    <div class="copyRight">
+    <div class="copyRight card-footer">
         <span>Copyright © 2022 CSE - Duy Tan University</span>
     </div>
     <!-- |-End Copy Right-| -->
