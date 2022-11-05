@@ -35,11 +35,21 @@ $(document).ready(function () {
     });
     $(window).resize(function () {
         var width = $(".camera_display img").width();
-        $(".camera_display img").height(width / 1.78);
         var width_01 = $(".camera_display canvas").width();
-        $(".camera_display canvas").height(width_01 / 1.78);
         var width_02 = $(".camera_display video").width();
-        $(".camera_display video").height(width_02 / 1.78);
+        if ($(window).width() <= 1024) {
+
+            $(".camera_display img").height(width / 1.78);
+
+            $(".camera_display canvas").height(width_01 / 1.78);
+
+            $(".camera_display video").height(width_02 / 1.78);
+        } else {
+            $(".camera_display img").height(536);
+            $(".camera_display canvas").height(536);
+            $(".camera_display video").height(536);
+        }
+
     }).resize();
     //End Login
     $(function () {
